@@ -14,7 +14,7 @@ app.get('/report-one',function(req,res) {
 });
 
 app.get('/report-two',function(req,res) {
-    res.send('report two request will be served here');
+    res.sendFile(path.join(__dirname, 'ui', 'report-two.html'));
 });
 
 app.get('/report-three',function(req,res) {
