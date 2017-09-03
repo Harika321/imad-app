@@ -14,7 +14,7 @@ app.get('/report-one',function(req,res) {
 });
 
 app.get('/report-two',function(req,res) {
-    res.send('report one request will be served here');
+    res.send('report two request will be served here');
 });
 
 app.get('/report-three',function(req,res) {
