@@ -5,12 +5,65 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var reportOne = {
+    title: 'report one : harika chatala',
+    heading: 'report-one',
+    date: '26 jan 2017,thursday',
+    content:   <p>
+                Harika always first...i like creating new things.i love sleeping.
+                interested in adventures things like sky diving,mountain climbing,scuba diving.
+            </p>
+            <p>
+                harika is a page to read but a book to understand...
+                love to ride bike(royal enfield)....dream to own BMW
+            </p>
+            <p>
+                wants to be like a woman who completes man
+                harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
+        </p>
+};
+
+
+function createtemplate (data) {
+ var title=data.title;
+ var date=data.date;
+ var heading=data.heading;
+ var content=data.content;
+ 
+ var htmltemplate -
+<html>
+    <head>
+        <title>
+            ${title}
+        </title>
+        <meta name="viexport" content-width="device-width, initial scale=1" />
+     <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+       <div class="container"><div>
+            <a href='/'>home</a>
+        </div>
+        <hr/>
+        <h3>${heading}</h3>
+        <div>
+            ${date}
+        </div><div>
+           ${content}
+        </div>
+    </div>
+   </body>
+</html>
+;
+return htmltemplate
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/report-one',function(req, res) {
-    res.sendFile(path.join(__dirname, 'ui', 'report-one.html'));
+    res.send(createtemplate(reportOne));
 });
 
 app.get('/report-two',function(req, res) {
