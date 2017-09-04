@@ -5,8 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var reportOne = {
+var repotrs = {reportOne = {
     title: 'report one : harika chatala',
     heading: 'report-one',
     date: '26 jan 2017,thursday',
@@ -22,8 +21,37 @@ var reportOne = {
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p>`
-};
-
+},
+ reportTwo =  {
+    title: 'report two : my mom...',
+    heading: 'report-two',
+    date: '19 june 2017,monday',
+    content: `  <p>
+               I love my mom...
+            </p>
+             she is my role-model.....
+            <p>
+              
+            </p>
+            <p>
+                 want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
+        </p>`
+},
+ reportThree =  {
+    title: 'report three : my dad...',
+    heading: 'report-three',
+    date: '28 aug 2017,monday',
+    content: `  <p>
+               I love my dad....
+            </p>
+             
+            <p>
+               He support me alot.....
+            </p>
+            <p>
+             he is the one who understand me completely
+        </p>`
+}};
 
 function createTemplate (data) {
  var title = data.title;
@@ -66,11 +94,11 @@ app.get('/report-one',function(req, res) {
 });
 
 app.get('/report-two',function(req, res) {
-    res.sendFile(path.join(__dirname, 'ui', "report-two.html"));
+     res.send(createTemplate(reportTwo));
 });
 
 app.get('/report-three',function(req, res) {
-   res.sendFile(path.join(__dirname, 'ui', 'report-three.html'));
+ res.send(createTemplate(reportThree));
 });
 
 app.get('/ui/style.css', function (req, res) {
