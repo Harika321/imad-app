@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 var reports = {
     'report-one'   :  {
-    title: 'report-one : harika chatala',
+    title: 'report-one harika chatala',
     heading: 'report-one',
     date: '26 jan 2017,thursday',
     content: `  <p>
@@ -24,7 +24,7 @@ var reports = {
         </p>`
 },
     'report-two'   :  {
-    title: 'report-two : my mom...',
+    title: 'report-two my mom...',
     heading: 'report-two',
     date: '19 june 2017,monday',
     content: `  <p>
@@ -32,21 +32,19 @@ var reports = {
             </p>
              she is my role-model.....
             <p>
-              
-            </p>
+               </p>
             <p>
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
         </p>`
 },
     'report-three' :  {
-    title: 'report-three : my dad...',
+    title: 'report-three my dad...',
     heading: 'report-three',
     date: '28 aug 2017,monday',
     content: `  <p>
                I love my dad....
             </p>
-             
-            <p>
+             <p>
                He support me alot.....
             </p>
             <p>
