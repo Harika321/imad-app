@@ -97,11 +97,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/report-two',function(req, res) {
-     res.send(createTemplate(reportTwo));
+     res.send(createTemplate(report-Two));
 });
 
 app.get('/report-three',function(req, res) {
- res.send(createTemplate(reportThree));
+ res.send(createTemplate(report-Three));
 });
 
 app.get('/ui/style.css', function (req, res) {
