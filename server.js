@@ -10,7 +10,7 @@ var reportOne = {
     title: 'report one : harika chatala',
     heading: 'report-one',
     date: '26 jan 2017,thursday',
-    content:   <p>
+    content: `  <p>
                 Harika always first...i like creating new things.i love sleeping.
                 interested in adventures things like sky diving,mountain climbing,scuba diving.
             </p>
@@ -21,17 +21,17 @@ var reportOne = {
             <p>
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p>
+        </p>`
 };
 
 
-function createtemplate (data) {
+function createTemplate (data) {
  var title = data.title;
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
  
- var htmltemplate -
+ var htmltemplate -`
 <html>
     <head>
         <title>
@@ -53,7 +53,7 @@ function createtemplate (data) {
         </div>
     </div>
    </body>
-</html>;
+</html>`;
 return htmltemplate;
 }
 
