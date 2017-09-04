@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var repotrs = {reportOne = {
+var reports = {
+    reportOne = {
     title: 'report one : harika chatala',
     heading: 'report-one',
     date: '26 jan 2017,thursday',
