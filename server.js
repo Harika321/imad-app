@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 var reports = {
-    reportOne = {
+    'report-one'   :  {
     title: 'report one : harika chatala',
     heading: 'report-one',
     date: '26 jan 2017,thursday',
@@ -23,7 +23,7 @@ var reports = {
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p>`
 },
- reportTwo =  {
+    'report-two'   :  {
     title: 'report two : my mom...',
     heading: 'report-two',
     date: '19 june 2017,monday',
@@ -38,7 +38,7 @@ var reports = {
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
         </p>`
 },
- reportThree =  {
+    'report-three' :  {
     title: 'report three : my dad...',
     heading: 'report-three',
     date: '28 aug 2017,monday',
@@ -90,7 +90,10 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/report-one',function(req, res) {
+app.get('/:reportName',function(req, res) {
+    //reportName = report-one
+    //reports[reportName]={} content object for report one  
+    var reportName = req.params.reportName; 
     res.send(createTemplate(reportOne));
 });
 
