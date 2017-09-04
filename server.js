@@ -93,7 +93,7 @@ app.get('/', function (req, res) {
     // reportName = report-one
     // reports[reportName]={} content object for report-one  
     var reportName = req.params.reportName; 
-    res.send(createTemplate(reportName));
+    res.send(createTemplate(reports[reportName]);
 });
 
 //app.get('/report-two',function(req, res) {
