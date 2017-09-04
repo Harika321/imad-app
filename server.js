@@ -26,10 +26,10 @@ var reportOne = {
 
 
 function createtemplate (data) {
- var title=data.title;
- var date=data.date;
- var heading=data.heading;
- var content=data.content;
+ var title = data.title;
+ var date = data.date;
+ var heading = data.heading;
+ var content = data.content;
  
  var htmltemplate -
 <html>
@@ -81,6 +81,7 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
+
 
 
 // Do not change port, otherwise your app won't run on IMAD servers
