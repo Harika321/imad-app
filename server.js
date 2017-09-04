@@ -93,16 +93,8 @@ app.get('/', function (req, res) {
     // reportName = report-one
     // reports[reportName]={} content object for report-one  
     var reportName = req.params.reportName; 
-    res.send(createTemplate(reports[reportName]);
+    res.send(createTemplate(reports[reportName]));
 });
-
-//app.get('/report-two',function(req, res) {
-  //   res.send(createTemplate(report-two));
-//});
-
-//app.get('/report-three',function(req, res) {
- //res.send(createTemplate(report-three));
-//});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
