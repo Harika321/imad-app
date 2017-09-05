@@ -97,8 +97,6 @@ app.get('/counter', function (req, res) {
             counter = counter + 1;
             res.send(counter.toString());
 });
-}
-
 
      app.get('/:reportName',function(req, res) {
     // reportName = report-one
