@@ -3,7 +3,7 @@ var button = document.getElementById("counter");
 
 button.onclick = function () {
     
-    //Make a request to the counter endpoint
+    // Create a request object
     var request = new XMLHttpRequest();
     
     
@@ -17,10 +17,10 @@ button.onclick = function () {
            span.innerHTML = counter.t;oString()    
             }
         }
-    //not done yet
+    // Not done yet
     };
     
-    //make the request
+    // Make the request
     request.open('GET', 'http://harikachatala09.imad.hasura-app.io/counter', true);
     request.send(null);
 };
