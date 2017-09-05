@@ -1,6 +1,10 @@
 console.log('Loaded!');
 
-\\ Move the image
+//
+
+
+
+// Move the image
 var img = document.getElementById('madi');
 var marginleft = 0;
 function moveright () {
