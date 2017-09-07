@@ -26,12 +26,8 @@ var reports = {
         </p><hr/>
             <input type="text" id="nameone" placeholder="nameone"> </input>
             <input type="submitone" value="submitone" id='submitone_btn'> </input>
-            <ul>
-            <li>name1</li>
-            <li>name3</li>
-            <li>name3</li>
-            <li>name4</li>
-          </ul></div>`    
+            <ul id= "nameonelist">
+            </ul></div>`    
 },
     'report-two'   :  {
     title: 'report-two my mom...',
