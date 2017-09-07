@@ -25,30 +25,27 @@ var reports = {
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p><hr/>
             <input type="text" id="name" placeholder="name"> </input>
-            <input type="submit" value="submit" id='submit_btn'> </input>
+            <input type="submitone" value="submitone" id='submitone_btn'> </input>
             <ul>
             <li>name1</li>
             <li>name3</li>
             <li>name3</li>
             <li>name4</li>
-          </ul></div>`    `
+          </ul></div>`    
 },
     'report-two'   :  {
     title: 'report-two my mom...',
     heading: 'report-two',
     date: '19 june 2017,monday',
-    content: `
-        <div class="center">
-            <img id="mom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-CW95jUI_Z_lGVf7Kdjc6Ram7E4_9JCe7ghigrENw1VkakhI" class="img-medium"/> </div> 
-            <p>
+    content: `<p>
                I love my mom...
-               </p>
-               <p>
+             </p>
+            <p>
              she is my role-model.....
             </p>
             <p>
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
-        </p></div> `
+        </p>`
 },
     'report-three' :  {
     title: 'report-three my dad...',
