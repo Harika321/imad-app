@@ -41,7 +41,7 @@ var reports = {
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
         </p>  <hr/>
             <input type="text" id="name" placeholder="name"> </input>
-            <input type="submit" value="submit" id='submit1_btn'> </input>
+            <input type="submit1" value="submit1" id='submit1_btn'> </input>
             <ul id="namelist">
           </ul></div>`
 },
@@ -146,7 +146,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 var names = [];
-app.get('/submit-name', function(req, res) { // URL: /submit-name?name=shyam
+app.get('/report-one/submit-name', function(req, res) { // URL: /submit-name?name=shyam
     // Get the name from the request
     var name = req.query.name;
     
