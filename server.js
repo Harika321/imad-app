@@ -31,7 +31,7 @@ var reports = {
     date: '19 june 2017,monday',
     content: ` <div class="container">
         <div class="center">
-            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-CW95jUI_Z_lGVf7Kdjc6Ram7E4_9JCe7ghigrENw1VkakhI" class="img-medium"/></div><div> <p>
+            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-CW95jUI_Z_lGVf7Kdjc6Ram7E4_9JCe7ghigrENw1VkakhI" class="img-medium"/></div> <p>
                I love my mom...
             </p>
              she is my role-model.....
@@ -39,7 +39,11 @@ var reports = {
                </p>
             <p>
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
-        </p></hr>`
+        </p>  <hr/>
+            <input type="text" id="name" placeholder="name"> </input>
+            <input type="submit" value="submit" id='submit1_btn'> </input>
+            <ul id="namelist">
+          </ul></div>`
 },
     'report-three' :  {
     title: 'report-three my dad...',
@@ -141,7 +145,14 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-
+var names = [];
+app.get('/submit-name', function(req, res) { // URL: /submit-name?name=shyam
+    // Get the name from the request
+    var name = req.query.name;
+    
+    names.push(name);
+    //JSON: Javascript Object Notation
+    res.send(JSON.stringify(names));
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
