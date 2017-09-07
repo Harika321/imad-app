@@ -12,7 +12,7 @@ var reports = {
     date: '26 jan 2017,thursday',
     content: `  <div class="container">
         <div class="center">
-            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMIMkQ2T7vMva3U86ZHgcjeo1C6jCA2lCeS7_1uvHp8UM5V7H" class="img-medium"/>,/div><div> <p>
+            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMIMkQ2T7vMva3U86ZHgcjeo1C6jCA2lCeS7_1uvHp8UM5V7H" class="img-medium"/></div><div> <p>
                 Harika always first...i like creating new things.i love sleeping.
                 interested in adventures things like sky diving,mountain climbing,scuba diving.
             </p>
