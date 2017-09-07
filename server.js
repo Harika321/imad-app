@@ -29,7 +29,9 @@ var reports = {
     title: 'report-two my mom...',
     heading: 'report-two',
     date: '19 june 2017,monday',
-    content: `  <p>
+    content: ` <div class="container">
+        <div class="center">
+            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-CW95jUI_Z_lGVf7Kdjc6Ram7E4_9JCe7ghigrENw1VkakhI" class="img-medium"/></div><div> <p>
                I love my mom...
             </p>
              she is my role-model.....
@@ -43,7 +45,9 @@ var reports = {
     title: 'report-three my dad...',
     heading: 'report-three',
     date: '28 aug 2017,monday',
-    content: `  <p>
+    content: `  <div class="container">
+        <div class="center">
+            <img id="madi" src="http://c.asstatic.com/images/1849701_635067047118048750-1.jpg" class="img-medium"/></div><div> <p>
                I love my dad....
             </p>
              <p>
