@@ -24,7 +24,7 @@ var reports = {
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p><hr/>
-            <input type="text" id="name" placeholder="name"> </input>
+            <input type="text" id="nameone" placeholder="nameone"> </input>
             <input type="submitone" value="submitone" id='submitone_btn'> </input>
             <ul>
             <li>name1</li>
