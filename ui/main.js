@@ -58,6 +58,22 @@ submit.onclick = function () {
         
 };
 
+//submitone name
+var nameInput = document.getElementById("nameone");
+var nameone = nameInput.value;
+var submitone = document.getElementById("submitone_btn");
+submitone.onclick = function () {
+    
+//make a request to the server and send the name
 
+// Capture a list of names and render it as a list
+var nameones =['name1', 'name2', 'name3', 'name4'];
+  var list = '';
+   for (var i=0; i< nameones.length, i++) {
+        list += '<li>' + nameones[i] + '</li>';
+}
+ var ul = document.getElementById('nameonelist');
+ ul.innerHTML = onelist;
+};
 
 
