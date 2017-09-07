@@ -67,10 +67,10 @@ submitone.onclick = function () {
 //make a request to the server and send the name
 
 // Capture a list of names and render it as a list
-var nameones =['name1', 'name2', 'name3', 'name4'];
+var nameone =['name1', 'name2', 'name3', 'name4'];
   var list = '';
-   for (var i=0; i< nameones.length, i++) {
-        list += '<li>' + nameones[i] + '</li>';
+   for (var i=0; i< nameone.length, i++) {
+        list += '<li>' + nameone[i] + '</li>';
 }
  var ul = document.getElementById('nameonelist');
  ul.innerHTML = onelist;
