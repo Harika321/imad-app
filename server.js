@@ -23,7 +23,7 @@ var reports = {
             <p>
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p>`
+        </p></hr>    `
 },
     'report-two'   :  {
     title: 'report-two my mom...',
@@ -39,7 +39,7 @@ var reports = {
                </p>
             <p>
                  want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
-        </p>`
+        </p></hr>`
 },
     'report-three' :  {
     title: 'report-three my dad...',
@@ -55,7 +55,7 @@ var reports = {
             </p>
             <p>
              he is the one who understand me completely
-        </p>`
+        </p></hr>`
 }
 };
 
