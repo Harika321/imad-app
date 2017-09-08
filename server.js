@@ -25,9 +25,7 @@ var reports = {
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p><input type="text", id="name", placeholder="name"> </input>
             <input type="submit", value="submit", id='submit_btn'> </input>
-            <ul><li>xyz</li>
-            <li>abc</li>
-            <li>pqr</li>
+            <ul id= "namelist>
             </ul>
     `    
 },
