@@ -26,10 +26,7 @@ var reports = {
         </p>  <hr/>
             <input type="text" id="enter" placeholder="enter"> </input>
             <input type="submit" value="reset" id="reset_btn"> </input>
-            <ul>
-            <li>harika</li>
-            <li>sudheer</li>
-            <li>sai</li>
+            <ul id='enterlist>
           </ul>
            `    
 },
