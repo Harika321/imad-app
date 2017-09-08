@@ -71,6 +71,6 @@ reset.onclick = function () {
   for (var i=0; i< enters.length; i++) {
      list += '<li>' + enters[i] + '</li>';
 }
-var ul = document.getElementById('enterlist')
+var ul = document.getElementById('enterlist');
 ul.innerHTML= list;
 };
