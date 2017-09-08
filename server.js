@@ -81,6 +81,7 @@ function createTemplate (data) {
     <body>
        <div class="container"><div>
             <a href='/'>home</a>
+            <a href='/'>testreport
             <a href='/report-one'>1</a>
             <a href='/report-two'>2</a>
             <a href='/report-three'>3</a>
@@ -96,6 +97,7 @@ function createTemplate (data) {
 </html>`;
 return htmlTemplate;
 }
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
