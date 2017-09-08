@@ -62,7 +62,7 @@ function createTemplate (data) {
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
- var footer = data.footer;
+ var comment = data.comment;
  
  var htmlTemplate =`
 <html>
@@ -86,7 +86,7 @@ function createTemplate (data) {
             ${date}
         </div><div>
            ${content}<hr/>
-        ${footer}</div>
+        ${comment}</div>
    </body>
 </html>`;
 return htmlTemplate;
