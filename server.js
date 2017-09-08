@@ -23,12 +23,8 @@ var reports = {
             <p>
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p>  <hr/>
-            <input type="text" id="enter" placeholder="enter"> </input>
-            <input type="submit" value="reset" id="reset_btn"> </input>
-            <ul id='enterlist>
-          </ul>
-           `    
+        </p>
+    `    
 },
     'report-two'   :  {
     title: 'report-two my mom...',
@@ -40,8 +36,7 @@ var reports = {
             <p>
              she is my role-model.....
             </p>
-            <p>
-                 want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
+            <p>I want to show her beautiful places...and make her happy by feeling proud to have a girl like ME
         </p>`
 },
     'report-three' :  {
@@ -67,6 +62,7 @@ function createTemplate (data) {
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
+ var footer = data.footer;
  
  var htmlTemplate =`
 <html>
@@ -90,7 +86,7 @@ function createTemplate (data) {
             ${date}
         </div><div>
            ${content}
-        </div>
+        </div><div>${footer}</div>
    </body>
 </html>`;
 return htmlTemplate;
