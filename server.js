@@ -25,7 +25,7 @@ var reports = {
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p>  <hr/>
             <input type="text" id="name" placeholder="name"> </input>
-            <input type="submit" value="submit"> </input>
+            <input type="submit" value="reset"> </input>
             <ul>
             <li>harika</li>
             <li>sudheer</li>
