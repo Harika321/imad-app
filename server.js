@@ -12,7 +12,7 @@ var reports = {
     date: '26 jan 2017,thursday',
     content: `  <div class="container">
         <div class="center">
-            <img id="madi" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMIMkQ2T7vMva3U86ZHgcjeo1C6jCA2lCeS7_1uvHp8UM5V7H" class="img-medium"/></div><div> <p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXMIMkQ2T7vMva3U86ZHgcjeo1C6jCA2lCeS7_1uvHp8UM5V7H" class="img-medium"/></div><div> <p>
                 Harika always first...i like creating new things.i love sleeping.
                 interested in adventures things like sky diving,mountain climbing,scuba diving.
             </p>
@@ -30,7 +30,9 @@ var reports = {
     title: 'report-two my mom...',
     heading: 'report-two',
     date: '19 june 2017,monday',
-    content: `<p>
+    content: ` <div class="container">
+        <div class="center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe-CW95jUI_Z_lGVf7Kdjc6Ram7E4_9JCe7ghigrENw1VkakhI/></div><div><p>
                I love my mom...
              </p>
             <p>
@@ -45,7 +47,7 @@ var reports = {
     date: '28 aug 2017,monday',
     content: `  <div class="container">
         <div class="center">
-            <img id="madi" src="http://c.asstatic.com/images/1849701_635067047118048750-1.jpg" class="img-medium"/></div><div> <p>
+            <img src="http://c.asstatic.com/images/1849701_635067047118048750-1.jpg" class="img-medium"/></div><div> <p>
                I love my dad....
             </p>
              <p>
@@ -62,7 +64,6 @@ function createTemplate (data) {
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
- var comment = data.comment;
  
  var htmlTemplate =`
 <html>
@@ -85,8 +86,8 @@ function createTemplate (data) {
         <div>
             ${date}
         </div><div>
-           ${content}<hr/>
-        ${comment}</div>
+           ${content}
+           </div>
    </body>
 </html>`;
 return htmlTemplate;
