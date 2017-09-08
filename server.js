@@ -85,8 +85,8 @@ function createTemplate (data) {
         <div>
             ${date}
         </div><div>
-           ${content}
-        </div><div>${footer}</div>
+           ${content}<hr/>
+        ${footer}</div>
    </body>
 </html>`;
 return htmlTemplate;
