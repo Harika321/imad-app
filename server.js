@@ -23,11 +23,7 @@ var reports = {
             <p>
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p><hr/>
-            <input type="text" id="nameone" placeholder="nameone"> </input>
-            <input type="submit" value="submit" id='submitone_btn'> </input>
-            <ul id= "nameonelist">
-            </ul></div>`    
+        </p>`    
 },
     'report-two'   :  {
     title: 'report-two my mom...',
@@ -66,6 +62,7 @@ function createTemplate (data) {
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
+ var footer = data.footer
  
  var htmlTemplate =`
 <html>
@@ -90,6 +87,9 @@ function createTemplate (data) {
         </div><div>
            ${content}
         </div>
+        <hr/>
+        <div>
+        ${footer}
     </div>
    </body>
 </html>`;
