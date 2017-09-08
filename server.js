@@ -21,12 +21,12 @@ var reports = {
                 love to ride bike(royal enfield)....dream to own BMW
             </p>
             <p>
-                wants to be like a woman who completes man
+              I wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p><input type="text", id="name", placeholder="name"> </input>
+                <input type="text", id="name", placeholder="name"> </input>
             <input type="submit", value="submit", id='submit_btn'> </input>
-            <ul id= "namelist>
-            </ul>
+            <ul id="namelist">
+</ul>
     `    
 },
     'report-two'   :  {
