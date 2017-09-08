@@ -23,7 +23,12 @@ var reports = {
             <p>
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
-        </p>
+        </p><input type="text", id="name", placeholder="name"> </input>
+            <input type="submit", value="submit", id='submit_btn'> </input>
+            <ul><li>xyz</li>
+            <li>abc</li>
+            <li>pqr</li>
+            </ul>
     `    
 },
     'report-two'   :  {
