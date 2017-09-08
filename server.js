@@ -24,9 +24,12 @@ var reports = {
                 wants to be like a woman who completes man
                 harika......"H"ours "A"yna & "R"isk "I"ntha vunna "K"aalu "A"agedhi ledhu....
         </p>  <hr/>
-            <input type="text", id="name", placeholder="name"> </input>
-            <input type="submit", value="submit", id='submit_btn'> </input>
-            <ul id="namelist">
+            <input type="text" id="name" placeholder="name"> </input>
+            <input type="submit" value="submit"> </input>
+            <ul>
+            <li>harika</li>
+            <li>sudheer</li>
+            <li>sai</li>
           </ul>
            `    
 },
@@ -67,7 +70,6 @@ function createTemplate (data) {
  var date = data.date;
  var heading = data.heading;
  var content = data.content;
- var footer = data.footer
  
  var htmlTemplate =`
 <html>
@@ -92,10 +94,6 @@ function createTemplate (data) {
         </div><div>
            ${content}
         </div>
-        <hr/>
-        <div>
-        ${footer}
-    </div>
    </body>
 </html>`;
 return htmlTemplate;
