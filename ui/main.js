@@ -57,3 +57,20 @@ submit.onclick = function () {
     request.send(null);
         
 };
+
+// Reset name
+var enterInput = document.getElementById("enter");
+var enter = enterInput.value;
+var reset = document.getElementById("reset_btn");
+reset.onclick = function () {
+    //make a request to the server and send the name
+    
+    // Capture a list of names and render it as a list
+    var enters = ['harika', 'sudheer', 'sai', 'druv'];
+    var list = '';
+  for (var i=0; i< enters.length; i++) {
+     list += '<li>' + enters[i] + '</li>';
+}
+var ul = document.getElementById('enterlist')
+ul.innerHTML= list;
+};
