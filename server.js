@@ -141,20 +141,20 @@ app.get('/submit-name', function(req, res) { // URL: /submit-name?name=shyam
     res.send(JSON.stringify(names));
 });
 
-     app.get('/Reports/:ReportName',function(req, res) {
+     app.get('/reports/:reportName',function(req, res) {
     // reportName = report-one
     // reports[reportName]={} content object for report-one  
     
     // select * FROM report WHERE title = 'report-one'
-    pool.query("SELECT * FROM Report WHERE title = '" + req.params.ReportName + "'", function (err, result) {
+    pool.query("SELECT * FROM report WHERE title = '" + req.params.reportName + "'", function (err, result) {
         if (err) {
             res.status(500).send(err.toString());
         } else {
             if (result.rows.length === 0) {
                 res.status(404).send('report not found');
             } else {
-                var ReportData = result.rows[0];
-    res.send(createTemplate(ReportData));
+                var reportData = result.rows[0];
+    res.send(createTemplate(reportData));
             }
         }
      });
