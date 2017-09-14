@@ -9,6 +9,7 @@ const pool = new Pool({
   database: 'harikachatala09',
   password: 'process.env.DB_PASSWORD',
   port: 5432,
+  
 });
 
 
@@ -108,7 +109,6 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-
 app.get('/test-db', function (req, res) {
  // make a select request
  
@@ -119,7 +119,8 @@ app.get('/test-db', function (req, res) {
  }
      else {
          res.send(JSON.stringify(result));
-     }
+     }{
+     pool.end()}
      });
 });
 
