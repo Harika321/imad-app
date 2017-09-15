@@ -110,6 +110,17 @@ app.get('/', function (req, res) {
 });
 
 
+function hash (input, salt) {
+    // How do we create a hash?
+    var hashed = crypto.pbkd2Sync(input, salt, 10000, 512, 'sha512');
+    return hashed.toString('hex');
+}
+
+app.get('/hash/:input', function(req, res) {
+    var hashedString = hash(req.pramas.input, 'this-is-some-random-string');
+    res.send(hashedString);
+});
+
 var pool = new Pool(config);
 app.get('/test-db', function (req, res) {
  // make a select request
