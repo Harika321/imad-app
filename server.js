@@ -111,7 +111,7 @@ app.get('/', function (req, res) {
 
 function hash (input, salt) {
     // How to create a hash??
-    var hashed = crypto.pbkdf(input, 10000, 512, 'sha512');
+    var hashed = crypto.pbkdf25ync(input, 10000, 512, 'sha512');
     return hashed.toString('hex');
     }
     
